@@ -1,1 +1,0 @@
-# Example without maybe monad
