@@ -3,7 +3,7 @@
 Advanced Typescript snippets.
 
 ## Monads
-* [Maybe](./maybe-monad.html)
+* [Maybe](./monads/maybe/)
 
 https://codewithstyle.info/advanced-functional-programming-in-typescript-maybe-monad/
     https://github.com/miloszpp/typescript-monads
