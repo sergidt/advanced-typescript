@@ -13,11 +13,20 @@
 
 <a href="https://sergidt.github.io/advanced-typescript/" class="float-right">Back to main section</a>
 
-<h2>Example without Maybe monad</h2>
+<h2>Point-free</h2>
 
+<p>
+    Point-free programming (Tacit programming) is a programming paradigm in which a function definition does not include information regarding its arguments, using combinators and function composition instead of variables.
+</p>
 
 <pre><code class="typescript hljs">
-const a : Array<number> = [];
+    interface Transaction {
+        amount: number;
+    }
+
+    public getPositiveTransactions(transactions: Transaction[]) {
+        return transactions.filter((t: Transaction) => t.amount > 0));
+    }
 </code></pre>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
