@@ -1,6 +1,10 @@
 body {
     margin: 20px;
+    color: #24292e;
     font-family: 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 iframe {
@@ -21,7 +25,6 @@ h1 {
     font-weight: 600;
     line-height: 40px;
     font-size: 32px;
-    color: #24292e;
     padding-bottom: 0.3em;
     border-bottom: 1px solid #eaecef;
 }
