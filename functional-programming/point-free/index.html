@@ -25,26 +25,24 @@
     }
 </code></pre>
 
-And now you want to get a list of positive transactions.
-
-Usually you can do this:
+And now you want to get a list of positive transactions. Usually you can do this:
 
 <pre><code class="typescript hljs">
-    public getPositiveTransactions(transactions: Transaction[]) {
-        return transactions.filter((t: Transaction) => t.amount > 0));
-    }
+public getPositiveTransactions(transactions: Transaction[]) {
+    return transactions.filter((t: Transaction) => t.amount > 0));
+}
 </code></pre>
 
 Or you can achieve point-free style by passing the function name to the filter callback.
 
 <pre><code class="typescript hljs">
-    public getPositiveTransactions(transactions: Transaction[]) {
+public getPositiveTransactions(transactions: Transaction[]) {
     return transactions.filter(this.isPositive);
-    }
-    
-    private isPositive(transaction: Transaction) {
+}
+
+private isPositive(transaction: Transaction) {
     return transactions.amount > 0;
-    }
+}
 </code></pre>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
