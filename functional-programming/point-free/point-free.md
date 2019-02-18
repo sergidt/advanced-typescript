@@ -87,4 +87,4 @@ So point free function works by:
 2- And in most of the cases, that function needs to be partially applied.
 
 
-https://medium.freecodecamp.org/how-point-free-composition-will-make-you-a-better-functional-programmer-33dcb910303a)
+https://medium.freecodecamp.org/how-point-free-composition-will-make-you-a-better-functional-programmer-33dcb910303a
