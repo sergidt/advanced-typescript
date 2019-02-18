@@ -4,6 +4,9 @@ Advanced Typescript snippets.
 
 ### Functional Programming
 
+* Core concepts
+  * [Point-free](./functional-programming/point-free/point-free.md)
+  
 * Monads
   * [Maybe](./functional-programming/monads/maybe/index.html)
 
