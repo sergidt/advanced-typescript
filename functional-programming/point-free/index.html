@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
     <link rel="stylesheet" href="../../styles/milligram.css">
     <link rel="stylesheet" href="../../styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/dracula.min.css" />
 </head>
 <body>
 
@@ -23,11 +24,9 @@ const a : Array<number> = [];
  charset="UTF-8"
  src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/languages/typescript.min.js"></script>
  <script>
- document.addEventListener('DOMContentLoaded', (event) => {
-  document.querySelectorAll('pre code').forEach((block) => {
-    hljs.highlightBlock(block);
-  });
-});
+ setTimeout(function(){
+    hljs.initHighlighting();
+ }, 0);
 </script>
 </body>
 </html>
