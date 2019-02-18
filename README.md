@@ -2,10 +2,10 @@
 
 Advanced Typescript snippets.
 
-## Functional Programming
+### Functional Programming
 
-### Monads
-* [Maybe](./functional-programming/monads/maybe/)
+* Monads
+  * [Maybe](./functional-programming/monads/maybe/index.html)
 
 
 https://codewithstyle.info/advanced-functional-programming-typescript-functional-exceptions/
