@@ -31,7 +31,60 @@ private isPositive(transaction: Transaction) {
 }
 ```
 
+## Benefits
 
-https://itnext.io/whats-point-free-style-in-typescript-39337000c8cb
+**Readability: the code becomes easy to read.**
+
+## Another example
+
+```typescript
+private const BIG_AMOUNT = 10;  
+
+public getBigTransactions(transactions: Transaction[]) {
+  return transactions.filter((t: Transaction) => t.amount > this.BIG_AMOUNT);
+}
+```
+This works, but now your inner function implementation depends on a “external” constant now, which is not good, is an antipattern. We want our function to be “pure”, meaning all inputs is provided to the function.
+
+Let’s say how can do this in point free style:
+
+```typescript
+private const BIG_AMOUNT = 10;
+
+public getBigTransactions(transactions: Transaction[]) {
+  return transactions.filter(this.moreThan(this.BIG_AMOUNT));
+}
+private moreThan(amount: number) {
+  return (transaction: Transaction) => transactions.amount > amount;
+}
+```
+
+## Watch out “this”
+If I change the above code to the following, will it work?
+
+```typescript
+private const BIG_AMOUNT = 10;
+
+public getBigTransactions(transactions: Transaction[]) {
+  return transactions.filter(this.moreThanBigAmount);
+}
+private moreThanBigAmount(transaction: Transaction) {
+  return transactions.amount > this.BIG_AMOUNT;
+}
+```
+**The answer is: no, it won’t work because of “this”.**
+
+I won’t go much details to `this` in TypeScript/JavaScript, but `this` basically depends on the caller. And in our case here, when this.moreThanBigAmount is called in the filter callback, the caller is `window`.
+
+We could solve this issue by bind to this when defining functions, but we should avoid doing that.
+
+The point is, if we try to program or think in functional programming, we need to explicitly define all the dependencies as function inputs. And we should avoid using `this` in any of the functions that’ll be passed as first class objects.
+
+## How does Point Free Work
+So point free function works by:
+
+1- Provide function name where it expects a function.
+2- And in most of the cases, that function needs to be partially applied.
+
 
 https://medium.freecodecamp.org/how-point-free-composition-will-make-you-a-better-functional-programmer-33dcb910303a)
