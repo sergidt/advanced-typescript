@@ -1,4 +1,4 @@
-[Main menu](../../README.md)
+[Main menu](../../README.md){: .float-right}
 
 # Point-free
 
