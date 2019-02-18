@@ -1,3 +1,5 @@
+[Main menu](../../README.md)
+
 # Point-free
 
 Point-free programming (Tacit programming) is a programming paradigm in which a function definition does not include information regarding its arguments, using combinators and function composition instead of variables.
