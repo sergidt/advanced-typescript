@@ -21,7 +21,7 @@ Advanced Typescript snippets.
 * Structural Design Patterns
     * Composite
     * Decorator
-    * Adapter
+    * [Adapter](./design-patterns/structural-design-patterns/adapter.html)
     * Bridge
     * Façade
     * Flyweight

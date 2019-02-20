@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Adapter</title>
+    <link rel="stylesheet" href="../../styles/styles.css" />
+</head>
+<body>
+
+<a href="https://sergidt.github.io/advanced-typescript/" class="float-right">Main menu</a>
+
+<h3>Adapter</h3>
+
+<p>Adapter Pattern connects existing classes or objects with another existing client. It makes
+   classes that are not designed to work together, possible to cooperate with each other.</p>
+<p>An adapter could be either a class adapter or an object adapter. A class adapter extends the
+   adaptee class and exposes extra APIs that would work with the client. An object adapter, on
+   the other hand, does not extend the adaptee class. Instead, it stores the adaptee as a
+   dependency.</p>
+<p>The class adapter is useful when you need to access protected methods or properties of the
+   adaptee class. However, it also has some restrictions when it comes to the JavaScript world:
+<ul>
+    <li>The adaptee class needs to be extendable</li>
+    <li>If the client target is an abstract class other than pure interface, you can't extend</li>
+    <li>the adaptee class and the client target with the same adapter class without a mixin</li>
+    <li>A single class with two sets of methods and properties could be confusing</li></ul>
+</p>
+
+<b>Participants</b><br>
+The participants of Adapter Pattern include:
+<ul>
+    <li><b>Target:</b> Storage. Defines the interface of existing targets that works with client</li>
+    <li><b>Adaptee:</b> IndexedDB. The implementation that is not designed to work with the client</li>
+    <li><b>Adapter:</b> IndexedDBStorage. Conforms the interface of target and interacts with adaptee</li>
+    <li><b>Client:</b> Manipulates the target</li>
+</ul>
+
+<img src="../assets/adapter.png"/>
+
+<h3>Code</h3>
+
+<iframe src="https://stackblitz.com/edit/typescript-dtaogj?embed=1&file=index.ts"></iframe>
+
+</body>
+</html>
