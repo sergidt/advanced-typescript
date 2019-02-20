@@ -13,7 +13,7 @@ Advanced Typescript snippets.
 ### Design patterns
 
 * Creational Design Patterns
-    * Factory method
+    * [Factory method](./design-patterns/creational-design-patterns/factory-method.html)
     * Abstract Factory
     * Builder
     * Prototype
