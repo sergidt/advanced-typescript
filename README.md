@@ -23,7 +23,7 @@ Advanced Typescript snippets.
     * Decorator
     * [Adapter](./design-patterns/structural-design-patterns/adapter.html)
     * Bridge
-    * Façade
+    * [Façade](./design-patterns/structural-design-patterns/facade.html)
     * Flyweight
     * Proxy
 * Behavioral Design Patterns
