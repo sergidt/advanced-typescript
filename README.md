@@ -48,3 +48,4 @@ Advanced Typescript snippets.
 
 
 
+https://github.com/gztchan/design-patterns-in-typescript

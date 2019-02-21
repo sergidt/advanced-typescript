@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Façade</title>
+    <link rel="stylesheet" href="../../styles/styles.css" />
+</head>
+<body>
+
+<a href="https://sergidt.github.io/advanced-typescript/" class="float-right">Main menu</a>
+
+<h3>Façade</h3>
+
+<p>The Façade Pattern organizes subsystems and provides a unified higher-level interface. An
+    example that might be familiar to you is a modular system. In JavaScript (and of course
+    TypeScript), people use modules to organize code. A modular system makes projects easier
+    to maintain, as a clean project structure can help reveal the interconnections among
+    different parts of the project.</p>
+
+<p>It is common that one project gets referenced by others, but obviously the project that
+    references other projects doesn't and shouldn't care much about the inner structures of its
+    dependencies. Thus a façade can be introduced for a dependency project to provide a
+    higher-level API and expose what really matters to its dependents.</p>
+
+<p>Take a robot as an example. People who build a robot and its components will need to
+    control every part separately and let them cooperate at the same time. However, people
+    who want to use this robot would only need to send simple commands like “walk” and
+    “jump”.
+    For the most flexible usage, the robot “SDK” can provide classes like MotionController,
+    FeedbackController, Thigh, Shank, Foot and so on. Possibly like the following image
+    shows:</p>
+    <img src="../assets/facade.png"/>
+
+<b>Participants</b><br>
+The participants of Facade Pattern include:
+<ul>
+    <li><b>Façade:</b> Robot. Defines a set of higher-level interfaces, and makes subsystems cooperate.</li>
+    <li><b>Subsystems:</b> MotionController, FeedbackController, Thigh, Shank and Foot</li>
+</ul>
+
+<h3>Code</h3>
+
+<iframe src="https://stackblitz.com/edit/typescript-cmhiig?file=index.ts"></iframe>
+
+</body>
+</html>
+
+Acabar exemple que no esta be
