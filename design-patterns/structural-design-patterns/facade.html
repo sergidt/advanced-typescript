@@ -23,25 +23,11 @@
     dependencies. Thus a façade can be introduced for a dependency project to provide a
     higher-level API and expose what really matters to its dependents.</p>
 
-<p>Take a robot as an example. People who build a robot and its components will need to
-    control every part separately and let them cooperate at the same time. However, people
-    who want to use this robot would only need to send simple commands like “walk” and
-    “jump”.
-    For the most flexible usage, the robot “SDK” can provide classes like MotionController,
-    FeedbackController, Thigh, Shank, Foot and so on. Possibly like the following image
-    shows:</p>
     <img src="../assets/facade.png"/>
-
-<b>Participants</b><br>
-The participants of Facade Pattern include:
-<ul>
-    <li><b>Façade:</b> Robot. Defines a set of higher-level interfaces, and makes subsystems cooperate.</li>
-    <li><b>Subsystems:</b> MotionController, FeedbackController, Thigh, Shank and Foot</li>
-</ul>
 
 <h3>Code</h3>
 
-<iframe src="https://stackblitz.com/edit/typescript-cmhiig?file=index.ts"></iframe>
+<iframe src="https://stackblitz.com/edit/typescript-wvt3hv?embed=1&file=index.ts"></iframe>
 
 </body>
 </html>
