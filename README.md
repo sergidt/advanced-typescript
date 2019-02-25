@@ -17,7 +17,7 @@ Advanced Typescript snippets.
     * Abstract Factory
     * Builder
     * Prototype
-    * Singleton
+    * [Singleton](./design-patterns/creational-design-patterns/singleton.md)
 * Structural Design Patterns
     * Composite
     * Decorator
@@ -40,9 +40,9 @@ Advanced Typescript snippets.
     
 ### SOLID Principles
 
-* Single Responsability Principle (SRP)
+* Single Responsibility Principle (SRP)
 * Open-Closed Principle
-*Liskov Substitution Principle
+* Liskov Substitution Principle
 * Interface Segregation Principle
 * Dependency Inversion Principle
 
